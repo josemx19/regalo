@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,26 @@
     <style>
         /* Estilos base para el cuerpo */
         body {
-            transition: background-color 1s ease-in-out; /* Transición suave para el cambio de color */
+            transition: background-color 1s ease-in-out;
+            /* Transición suave para el cambio de color */
         }
+
         /* Color de fondo inicial */
         .bg-pink-theme {
-            background-color: #fce7f3; /* Rosa claro muy suave */
+            background-color: #fce7f3;
+            /* Rosa claro muy suave */
         }
+
         .invitation-card {
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
+
 <body class="min-h-screen flex items-center justify-center p-4 bg-pink-theme">
 
     <div class="invitation-card bg-white rounded-xl max-w-lg w-full p-6 sm:p-10 text-center border-4 border-pink-300">
-        
+
         <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-2">
             ¡Es un/una... !
         </h1>
@@ -40,30 +46,32 @@
         </div>
 
         <div class="space-y-4 mb-10 text-lg">
-            
+
             <p class="text-gray-700">
                 <span class="font-bold text-pink-600">Fecha:</span> Sábado, 15 de Febrero, 2026
             </p>
-            
+
             <p class="text-gray-700">
                 <span class="font-bold text-blue-600">Hora:</span> 4:00 PM
             </p>
-            
+
             <p class="text-gray-700">
                 <span class="font-bold text-gray-800">Lugar:</span> Salón de Eventos "El Cisne"
             </p>
-            
+
             <p class="text-sm text-gray-500 italic">
                 (Dirección: Calle Falsa 123, Ciudad Ejemplo)
             </p>
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#" class="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+            <a href="#"
+                class="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
                 ¡Sí, asistiré!
             </a>
-            
-            <a href="#" class="w-full sm:w-auto px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+
+            <a href="#"
+                class="w-full sm:w-auto px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
                 Ver Ubicación (Mapa)
             </a>
         </div>
@@ -72,16 +80,28 @@
             *Favor de confirmar asistencia antes del 5 de Febrero.
         </p>
 
+        <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https://www.canva.com/design/DAG5GAn1Dmo/4UsLS0cgZsOxx65Wsk8wgg/view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG5GAn1Dmo&#x2F;4UsLS0cgZsOxx65Wsk8wgg&#x2F;view?utm_content=DAG5GAn1Dmo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener">Invitación Bautizo Animado Hojas Acuarela Cuadrado Verde</a> de Jose Olvera
+
     </div>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const body = document.body;
-            
+
             // Definir las clases de color de fondo de Tailwind
             const pinkClass = 'bg-pink-theme'; // Clase personalizada con el color rosa claro
             const blueClass = 'bg-blue-100'; // Color azul claro de Tailwind
-            
+
             let isPink = true;
 
             function toggleBackground() {
@@ -103,4 +123,5 @@
     </script>
 
 </body>
+
 </html>
