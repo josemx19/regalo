@@ -3,17 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Flores Amarillas</title>
+    <title>¡Revelación de Sexo! - Te invitamos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos base para el cuerpo */
+        body {
+            transition: background-color 1s ease-in-out; /* Transición suave para el cambio de color */
+        }
+        /* Color de fondo inicial */
+        .bg-pink-theme {
+            background-color: #fce7f3; /* Rosa claro muy suave */
+        }
+        .invitation-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Tal vez no sean reales, pero no te quedas sin tus flores amarillas</h1>
-        <h1>Te amo <3</h1>
-        <div class="flower-container">
-            <!-- Las flores se agregarán y eliminarán aquí mediante JavaScript -->
+<body class="min-h-screen flex items-center justify-center p-4 bg-pink-theme">
+
+    <div class="invitation-card bg-white rounded-xl max-w-lg w-full p-6 sm:p-10 text-center border-4 border-pink-300">
+        
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-2">
+            ¡Es un/una... !
+        </h1>
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-600 mb-8">
+            Fiesta de Revelación de Sexo
+        </h2>
+
+        <div class="flex justify-center space-x-4 mb-8">
+            <span class="text-6xl sm:text-7xl font-bold text-pink-500">
+                👧
+            </span>
+            <span class="text-6xl sm:text-7xl font-bold text-blue-500">
+                👦
+            </span>
         </div>
+
+        <div class="space-y-4 mb-10 text-lg">
+            
+            <p class="text-gray-700">
+                <span class="font-bold text-pink-600">Fecha:</span> Sábado, 15 de Febrero, 2026
+            </p>
+            
+            <p class="text-gray-700">
+                <span class="font-bold text-blue-600">Hora:</span> 4:00 PM
+            </p>
+            
+            <p class="text-gray-700">
+                <span class="font-bold text-gray-800">Lugar:</span> Salón de Eventos "El Cisne"
+            </p>
+            
+            <p class="text-sm text-gray-500 italic">
+                (Dirección: Calle Falsa 123, Ciudad Ejemplo)
+            </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#" class="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                ¡Sí, asistiré!
+            </a>
+            
+            <a href="#" class="w-full sm:w-auto px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                Ver Ubicación (Mapa)
+            </a>
+        </div>
+
+        <p class="mt-8 text-sm text-gray-400">
+            *Favor de confirmar asistencia antes del 5 de Febrero.
+        </p>
+
     </div>
-    <script src="script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            
+            // Definir las clases de color de fondo de Tailwind
+            const pinkClass = 'bg-pink-theme'; // Clase personalizada con el color rosa claro
+            const blueClass = 'bg-blue-100'; // Color azul claro de Tailwind
+            
+            let isPink = true;
+
+            function toggleBackground() {
+                if (isPink) {
+                    // Cambia a azul
+                    body.classList.remove(pinkClass);
+                    body.classList.add(blueClass);
+                } else {
+                    // Cambia a rosa
+                    body.classList.remove(blueClass);
+                    body.classList.add(pinkClass);
+                }
+                isPink = !isPink; // Invierte el estado
+            }
+
+            // Llama a la función cada 3000 milisegundos (3 segundos)
+            setInterval(toggleBackground, 3000);
+        });
+    </script>
+
 </body>
 </html>
